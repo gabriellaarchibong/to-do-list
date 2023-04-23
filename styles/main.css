@@ -1,0 +1,92 @@
+body {
+	background-image: url(flower1.jpg),url(flower4.jpg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 500px;
+	padding: 15px;
+
+}
+h1 {
+	color:green;
+	font-size: 100px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+	border: 1px solid blue;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: red;
+	color: white;
+	min-height: 50px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+	padding: 10px 15px;
+	z-index: 1;
+	border-radius: 10px;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dp {
+	background-color: gray;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+.drp {
+	position: relative;
+	display: inline-block;
+	
+}
+.dc {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+	z-index: 1;
+}
+a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+a:hover {
+	background-color:transparent;
+}
+.drp:hover .dc {
+	background-color: purple;
+	display: block;
+}
+.drp:hover .dp  {
+	background-color: pink;
+}
+.down {
+	position: relative;
+	display: inline-block;
+}
+.content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+	z-index: 1;
+}
+
+
+h2 {
+	counter-reset: section;
+}
+h2::before {
+	counter-increment: section;
+	content: counter(section) "." counter(subsection) " ";
+}
+.exp1 {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(flower3.jpg) 20% round;
+}
